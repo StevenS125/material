@@ -1,9 +1,6 @@
 @import '../styles';
 .mat-sidenav-container {
-    .mat-sidenav {
-        width: 200px;
-        background: mat-color($mat-grey, 400);
-    }
+    @include angular-material-theme($carrots-app-theme);
     .mat-toolbar {
         padding: 0px;
         .mat-toolbar-row:first-of-type {

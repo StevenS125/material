@@ -12,7 +12,7 @@ export class CheckoutPage {
   constructor(private snackbar:MdSnackBar) {
   }
   onSubmit(){
-    this.snackbar.open("Order submitted", null, {
+    this.snackbar.open("Order submitted", "Retry", {
       duration: 5000
     });
   }

@@ -1,19 +1,33 @@
 <md-sidenav-container>
     <md-sidenav #sidenav mode="side">
-        Sidenav
+        <md-list>
+            <md-list-item>
+                <button color="accent" md-button mdTooltip="Home" routerLink=""><md-icon>home</md-icon></button>
+            </md-list-item>
+            <md-list-item>
+                <button color="accent" md-button mdTooltip="Coupon" routerLink="/coupon"><md-icon>receipt</md-icon></button>
+            </md-list-item>
+            <md-list-item>
+                <button color="accent" md-button mdTooltip="Checkout" routerLink="/checkout"><md-icon>shopping_cart</md-icon></button>
+            </md-list-item>
+            <md-list-item>
+                <button color="accent" md-button mdTooltip="Help" routerLink="/help"><md-icon>help</md-icon></button>
+            </md-list-item>
+
+        </md-list>
 
 
     </md-sidenav>
 
     <md-toolbar>
         <div class="filler"></div>
-        <button md-button routerLink=""><md-icon>home</md-icon></button>
-        <button md-button routerLink="/coupon"><md-icon>receipt</md-icon></button>
-        <button md-button routerLink="/checkout"><md-icon>shopping_cart</md-icon></button>
-        <button md-button routerLink="/help"><md-icon>help</md-icon></button>
+        <button md-button mdTooltip="Home" routerLink=""><md-icon>home</md-icon></button>
+        <button md-button mdTooltip="Coupon" routerLink="/coupon"><md-icon>receipt</md-icon></button>
+        <button md-button mdTooltip="Checkout" routerLink="/checkout"><md-icon>shopping_cart</md-icon></button>
+        <button md-button mdTooltip="Help" routerLink="/help"><md-icon>help</md-icon></button>
 
         <md-toolbar-row>
-            <button md-button (click)="sidenav.toggle()">
+            <button mdTooltip="Menu" md-button (click)="sidenav.toggle()">
             <md-icon>menu</md-icon></button>
         </md-toolbar-row>
 

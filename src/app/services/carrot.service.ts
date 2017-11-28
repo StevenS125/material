@@ -8,6 +8,8 @@ export class CarrotService {
   constructor(private http:Http) {
   }
 
+  // http://cdn.iamsap.com/courses/2017-angular2-material/carrots/carrots.json
+
   getCarrots():Observable<Array<any>> {
     return this.http.get('http://cdn.iamsap.com/courses/2017-angular2-material/carrots/carrots.json')
       .map(this.extractData)
