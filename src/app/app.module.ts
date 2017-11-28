@@ -41,6 +41,7 @@ import { ROUTES } from './app.routes';
     BrowserAnimationsModule
     ],
   providers: [CarrotService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ CouponDialogComponent ]
 })
 export class AppModule { }

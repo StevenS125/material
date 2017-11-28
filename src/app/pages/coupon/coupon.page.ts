@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { MdDialog } from '@angular/material';
+import { CouponDialogComponent } from '../../components/coupon-dialog'
 
 @Component({
   selector: 'coupon',
@@ -8,7 +10,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class CouponPage {
 
-  constructor() {
+  constructor(private dialog:MdDialog) {}
+
+  onOpenDialog() {
+    this.dialog.open(CouponDialogComponent);
   }
 
 }

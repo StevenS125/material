@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { MdSnackBar } from '@angular/material';
 
 @Component({
   selector: 'checkout',
@@ -8,7 +9,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class CheckoutPage {
 
-  constructor() {
+  constructor(private snackbar:MdSnackBar) {
+  }
+  onSubmit(){
+    this.snackbar.open("Order submitted", null, {
+      duration: 5000
+    });
   }
 
 }

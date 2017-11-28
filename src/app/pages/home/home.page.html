@@ -1,6 +1,6 @@
 <md-tab-group>
     <md-tab label="Deals">
-        <<md-grid-list cols="4">
+        <md-grid-list cols="4">
             <md-grid-tile *ngFor="let carrot of carrots">
                 <div class="carrots-container">
                     <div class="carrot" [ngStyle]="{'background-image':'url('+ carrot.imagePath + ')'}">
@@ -8,7 +8,7 @@
                     </div>
                 </div>
             </md-grid-tile>
-            </md-grid-list>
+        </md-grid-list>
     </md-tab>
     <md-tab label="About To Spoil"></md-tab>
     <md-tab label="Not the Best...But"></md-tab>
