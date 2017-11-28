@@ -1,8 +1,12 @@
+import 'hammerjs';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Pages
 import { AppComponent } from './app.component';
@@ -32,7 +36,9 @@ import { ROUTES } from './app.routes';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    MaterialModule,
+    BrowserAnimationsModule
     ],
   providers: [CarrotService],
   bootstrap: [AppComponent]

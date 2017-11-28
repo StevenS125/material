@@ -1,1 +1,37 @@
-<p>Checkout</p>
+<md-card>
+    <md-card-header>
+        <md-card-title>Checkout</md-card-title>
+        <md-card-subtitle>Enter Your Shipping Address</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+        <form>
+            <h3>Basics</h3>
+            <md-input-container>
+                <input mdInput placeholder="First Name">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput placeholder="Last Name">
+            </md-input-container>
+            <md-input-container>
+                <input mdInput placeholder="Email">
+                <md-hint align='end'>ex: info@gmail.com</md-hint>
+            </md-input-container>
+            <md-input-container>
+                <input mdInput placeholder="Phone">
+                <md-hint align='end'>format: ###-###-####</md-hint>
+            </md-input-container>
+
+            <h3>Preferences</h3>
+            <md-select placeholder="Preffered Contact method">
+                <md-option value="Email">Email</md-option>
+                <md-option value="Phone">Phone</md-option>
+            </md-select>
+
+            <md-checkbox>Subscribe to our newsletter</md-checkbox>
+        </form>
+    </md-card-content>
+    <md-card-actions>
+        <button md-button color="primary">Submit</button>
+        <button md-button>Cancel</button>
+    </md-card-actions>
+</md-card>

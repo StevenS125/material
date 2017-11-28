@@ -1,15 +1,27 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$carrots-app-primary: mat-palette($mat-green);
+$carrots-app-accent: mat-palette($mat-cyan);
+$carrots-app-theme: mat-light-theme($carrots-app-primary, $carrots-app-accent);
+@include angular-material-theme($carrots-app-theme);
+body,
+html,
+.mat-sidenav-container {
+    height: 100vh;
+}
+
 body {
-  margin: 0px;
-  background:#efefef;
+    margin: 0px;
+    background: #efefef;
 }
 
 .flexbox {
-  display:flex;
+    display: flex;
 }
 
 .filler {
-  visibility: hidden;
-  flex-grow: 1;
+    visibility: hidden;
+    flex-grow: 1;
 }
 
 $font-xs:10px;
@@ -17,22 +29,19 @@ $font-sm:12px;
 $font-md:14px;
 $font-lg:16px;
 $font-xl:20px;
-
 $padding-xs:4px;
 $padding-sm:8px;
 $padding-md:16px;
 $padding-lg:24px;
 $padding-xl:40px;
-
 $orange:#FF9800;
-
 $grey:#757575;
 $grey-dark:#424242;
-
 * {
-  font-family:Arial;
+    font-family: Arial;
 }
 
-a, a:active {
-  color:#2196F3;
+a,
+a:active {
+    color: #2196F3;
 }

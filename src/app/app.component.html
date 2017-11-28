@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<md-sidenav-container>
+    <md-sidenav #sidenav mode="side">
+        Sidenav
+
+
+    </md-sidenav>
+
+    <md-toolbar>
+        <div class="filler"></div>
+        <button md-button>home</button>
+        <button md-button>Coupons</button>
+        <button md-button>Checkout</button>
+        <button md-button>help</button>
+
+    </md-toolbar>
+
+    <button button md-button (click)="sidenav.toggle()">Menu</button>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
